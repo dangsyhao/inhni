@@ -1,3 +1,6 @@
+<?php
+    $postID = $inhni_hot_news->ID;
+?>
 <article class="article big">
     <!--{# When the "video" class is present, an icon will be added in css #}-->
     <div class="image">
@@ -5,41 +8,28 @@
            href="#"
            title="Consulter l'article"
            style="background-image: url('<?php echo ASSETS_PATH.'images/'?>placeholder.gif');"
-           data-lazy-src-0-480="<?php echo ASSETS_PATH.'images/'?>news-mobile.jpg"
-           data-lazy-src-481="<?php echo ASSETS_PATH.'images/'?>news.jpg">
+           data-lazy-src-0-480="<?= get_the_post_thumbnail_url($postID, 'hot-new-mobile') ?>"
+           data-lazy-src-481="<?= get_the_post_thumbnail_url($postID, 'hot-news') ?>">
             <noscript>
-                <img src="<?php echo ASSETS_PATH.'images/'?>news.jpg" alt="Journée mondiale de la propreté"/>
+                <img src="<?= get_the_post_thumbnail_url($postID, 'hot-news') ?>" alt="Journée mondiale de la propreté"/>
             </noscript>
         </a>
     </div>
     <div class="content">
         <ul class="tags">
             <li>
-                <span>Actualités</span>
+                <span><?php _e("Actualités",DOMAIN); ?></span>
             </li>
         </ul>
         <h4 class="title-3">
             <a href="#" title="Consulter l'article">
-                Journée mondiale de la propreté
+                <?= $inhni_hot_news->post_title ?>
             </a>
         </h4>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae luctus dolor. Fusce
-            tempus commodo arcu, at sodales libero feugiat quis. Sed sagittis maximus enim, mattis fringilla nibh
-            ullamcorper in. Morbi lacinia magna ut dui ultrices commodo eget a ex. Pellentesque sagittis enim
-            diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae luctus dolor. Fusce
-            tempus commodo arcu, at sodales libero feugiat quis. Sed sagittis maximus enim, mattis fringilla nibh
-            ullamcorper in. Morbi lacinia magna ut dui ultrices commodo eget a ex. Pellentesque sagittis enim
-            diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae luctus dolor. Fusce
-            tempus commodo arcu, at sodales libero feugiat quis. Sed sagittis maximus enim, mattis fringilla nibh
-            ullamcorper in. Morbi lacinia magna ut dui ultrices commodo eget a ex. Pellentesque sagittis enim
-            diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae luctus dolor. Fusce
-            tempus commodo arcu, at sodales libero feugiat quis. Sed sagittis maximus enim, mattis fringilla nibh
-            ullamcorper in. Morbi lacinia magna ut dui ultrices commodo eget a ex. Pellentesque sagittis enim
-            diam.
-        </p>
+        <p> <?php get_the_excerpt($postID) ?></p>
         <span class="link-arrow link-arrow-blue">
-            <a class="link" href="#" title="Continuer la lecture">Lire la suite</a>
+            <a class="link" href="<?= get_the_permalink($postID) ?>" title="Continuer la lecture"><?php _e('Lire la suite',DOMAIN);?></a>
         </span>
     </div>
+
 </article>

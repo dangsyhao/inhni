@@ -1,3 +1,4 @@
+
 <footer id="footer">
     <div class="footer-top">
         <div class="wrapper">
@@ -32,5 +33,6 @@
 </footer>
 <?php wp_footer(); ?>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Condensed:400,500,700|Roboto:300,400,500|Source+Serif+Pro:600,700,900" rel="stylesheet">
-</body>
+
+    </body>
 </html>

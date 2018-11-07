@@ -31,5 +31,11 @@ function athena_setup(){
     ) );
     add_theme_support( 'post-thumbnails' );
     add_post_type_support( 'page', 'excerpt' );
-    // add_image_size(FULL_SLIDE,1366,555,TRUE);
 }
+
+/**
+ * Add Theme Support -Post Formats
+ **/
+
+add_theme_support( 'post-formats', array( 'aside', 'gallery','link','image' ) );
+

@@ -1,8 +1,13 @@
-<div class="testimonial">
-    <p class="txt">
-        Très bonne formation. L'animateur prend bien en compte la fonction et le contexte de travail de chacun pour
-        illustrer par des exemples et impliquer tout le monde. Le lien constant avec la pratique professionnelle était
-        très enrichissant.
-    </p>
-    <p class="someone">Anita, Responsable</p>
-</div>
+
+<?php $testimonials_test=get_sub_field(TESTIMONIALS_BLOC_TESTIMONIALS);?>
+    <?php
+        foreach($testimonials_test as $test):
+            $testimonials_content=$test[TESTIMONIALS_BLOC_TESTIMONIALS_CONTENT];
+            $testimonials_someonce=$test[TESTIMONIALS_BLOC_TESTIMONIALS_SOMEONE];
+    ?>
+        <div class="testimonial">
+            <p class="txt"><?= $testimonials_content; ?></p>
+            <p class="someone"><?= $testimonials_someonce; ?></p>
+        </div>
+
+    <?php endforeach;?>

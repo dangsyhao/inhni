@@ -3,7 +3,7 @@
         <img src="<?= get_field(AT_LOGO, 'option') ?>" alt="<?= get_bloginfo('name') ?> - logo"/>
     </a>
     <?php 
-    	if ( have_rows(AT_SECOND_LOGO, 'option') ) :the_row() ;
+    	if ( have_rows(AT_SECOND_LOGO, 'option') ) :
     		$secondLogo = get_field(AT_SECOND_LOGO, 'option');
     ?>
 	    <a href="<?= $secondLogo['link'] ?>" title="<?= get_sub_field('title');?>" target="_blank"

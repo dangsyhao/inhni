@@ -1,21 +1,20 @@
-
-<?php while(have_rows('inhni_job_offers')):the_row();?>
+<?php while(have_rows(INHNI_JOB_OFFERS)):the_row();?>
     <?php
-        $job_obffer_title=get_sub_field('inhni_job_offer_title');
-        $job_obffer_detail=get_sub_field('inhni_job_offers_details');
-        $job_obffer_content=get_sub_field('inhni_job_offers_content');
-        $job_obffer_link=get_sub_field('inhni_job_offers_link');
+        $job_obffer_title=get_sub_field(INHNI_JOB_OFFER_TITLE);
+        $job_obffer_detail=get_sub_field(INHNI_JOB_OFFERS_DETAILS);
+        $job_obffer_content=get_sub_field(INHNI_JOB_OFFERS_CONTENT);
+        $job_obffer_link=get_sub_field(INHNI_JOB_OFFERS_LINK);
     ?>
     <a class="job" href="#" title="Consulter l'offre d'emploi">
         <h4 class="title-4">Agent de petite maintenance H/F</h4>
         <ul class="details">
-            <li class="school"><?= $job_obffer_detail['inhni_job_offers_details_school']?></li>
-            <li class="location"><?= $job_obffer_detail['inhni_job_offers_details_location']?></li>
-            <li class="money"><?= $job_obffer_detail['inhni_job_offers_details_money']?></li>
+            <li class="school"><?= $job_obffer_detail[INHNI_JOB_OFFERS_DETAILS_SCHOOL]?></li>
+            <li class="location"><?= $job_obffer_detail[INHNI_JOB_OFFERS_DETAILS_LOCATION]?></li>
+            <li class="money"><?= $job_obffer_detail[INHNI_JOB_OFFERS_DETAILS_MONEY]?></li>
         </ul>
         <p><?= $job_obffer_content; ?> </p>
         <span class="link-arrow link-arrow-align-right link-arrow-white">
-            <span class="<?= $job_obffer_link['inhni_job_offers_link_url']?>"><?= $job_obffer_link['inhni_job_offers_link_title']?></span>
+            <span class="<?= $job_obffer_link[INHNI_JOB_OFFERS_LINK_URL]?>"><?= $job_obffer_link[INHNI_JOB_OFFERS_LINK_TITLE]?></span>
         </span>
     </a>
 <?php endwhile; ?>

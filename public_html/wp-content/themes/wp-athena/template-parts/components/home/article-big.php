@@ -1,5 +1,6 @@
 <?php
     $postID = $inhni_hot_news->ID;
+    $post_title=$inhni_hot_news->post_title;
 ?>
 <article class="article big">
     <!--{# When the "video" class is present, an icon will be added in css #}-->
@@ -23,7 +24,7 @@
         </ul>
         <h4 class="title-3">
             <a href="#" title="Consulter l'article">
-                <?= $inhni_hot_news->post_title ?>
+                <?= $post_title ?>
             </a>
         </h4>
         <p> <?php get_the_excerpt($postID) ?></p>

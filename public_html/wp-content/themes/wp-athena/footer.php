@@ -10,8 +10,8 @@
                 <?php get_template_part( 'template-parts/footer/footer', 'title-menu1' ) ?>
                 <?php get_template_part( 'template-parts/footer/footer', 'title-menu2' ) ?>
                     <div class="footer-top-right-top-right">
-                        <p class="title-6 blue-polygon">Suivez-nous !</p>
-                        <?php get_template_part( 'template-parts/footer/footer', 'social-networks' ) ?>
+                        <p class="title-6 blue-polygon"><?php _e('Suivez-nous !',DOMAIN);?></p>
+                        <?php get_template_part( 'template-parts/footer/social-networks' ) ?>
 
                     </div>
                 </div>

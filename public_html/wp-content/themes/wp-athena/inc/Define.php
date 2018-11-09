@@ -82,5 +82,16 @@ define('PARTNERS_BLOC_TITLE_TAG','_partners_bloc_title_tag');
 define('PARTNERS_BLOC_IMAGE_URL','_partners_bloc_image_url');
 define('PARTNERS_BLOC_IMAGE_LAZY_URL','_partners_bloc_image_lazy_url');
 
+/**
+ * Footer
+ **/
+define('INHNI_CONTACT','inhni_contact');
+define('INHNI_HOME_MENU_1','inhni_home_menu_1');
+define('INHNI_HOME_MENU_2','inhni_footer_menu_2');
+define('INHNI_FOOTER_PARTENAIRES','inhni_footer_partenaires');
+define('INHNI_FOOTER_BIG_MENU','inhni_footer_big_menu');
+define('INHNI_FANPAGE','inhni_fanpage');
+
+
 
 

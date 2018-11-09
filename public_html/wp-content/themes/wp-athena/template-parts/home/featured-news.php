@@ -1,6 +1,7 @@
+
+<?php if(get_field(INHNI_HOT_NEWS)):?>
 <?php
     $inhni_hot_news = get_field(INHNI_HOT_NEWS);
-    if ( $inhni_hot_news ) :
 ?>
 <section class="featured-news-bloc">
     <div class="wrapper">
@@ -13,4 +14,4 @@
         </a>
     </div>
 </section>
-<?php endif;
+<?php endif;?>

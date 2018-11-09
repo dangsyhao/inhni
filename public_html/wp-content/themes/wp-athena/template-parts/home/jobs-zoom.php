@@ -1,4 +1,5 @@
 
+<?php if(have_rows(INHNI_JOBS_ZOOM)):?>
 <section class="jobs-zoom-bloc">
     <div class="wrapper">
         <h3 class="title-1 blue-polygon">
@@ -28,9 +29,9 @@
             </a>
             <?php endwhile;?>
         </div>
-        <a class="btn" href="#" title="Voir tous les métiers">
-            <span class="txt">Tous les métiers</span>
+        <a class="btn" href="#" title="<?php _e('Voir tous les métiers',DOMAIN)?>">
+            <span class="txt"><?php _e('Tous les métiers',DOMAIN);?></span>
         </a>
     </div>
 </section>
-
+<?php endif;?>

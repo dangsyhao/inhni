@@ -1,9 +1,10 @@
 
-<?php if(have_rows('at_contact')):the_row()?>
-<?php var_dum(get_sub_field('at_contact')) ;?>
-<p class="name">INHNI,?></p>
-<p class="desc">centre de formation professionnelle continue et en alternance</p>
-<p class="addr1">34 Bd Maxime Gorki</p>
-<p class="addr2">94800 Villejuif Cedex</p>
-<p class="phone">01 46 77 40 40</p>
-<?php endif ;?>
+<?php if(have_rows(INHNI_CONTACT,'option')):?>
+    <?php $contact_value=get_field(INHNI_CONTACT,'option');?>
+    <p class="name"><?= $contact_value['_company_name'];?></p>
+    <p class="desc"><?= htmlentities($contact_value['_description']);?></p>
+    <p class="addr1"><?= $contact_value['_address_1'];?></p>
+    <p class="addr2"><?= $contact_value['_address_2'];?></p>
+    <p class="phone"><?= $contact_value['_phone'];?></p>
+<?php endif;
+

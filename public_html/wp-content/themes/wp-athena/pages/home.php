@@ -5,12 +5,12 @@
 get_header();
 ?>
 <!--Start Pull HTML here-->
-<?php get_template_part( 'template-parts/home/search-formation' ) ?>
-<?php get_template_part( 'template-parts/home/inhni-numbers') ?>
-<?php get_template_part( 'template-parts/home/featured-news' ) ?>
-<?php get_template_part( 'template-parts/home/jobs-offers' ) ?>
-<?php get_template_part( 'template-parts/home/jobs-zoom' ) ?>
-<?php get_template_part( 'template-parts/home/testimonials' ) ?>
-<?php get_template_part( 'template-parts/home/partners' ) ?>
+<?php get_template_part( 'template-parts/blocks/home/search-formation' ) ?>
+<?php get_template_part( 'template-parts/blocks/home/inhni-numbers') ?>
+<?php get_template_part( 'template-parts/blocks/home/featured-news' ) ?>
+<?php get_template_part( 'template-parts/blocks/home/jobs-offers' ) ?>
+<?php get_template_part( 'template-parts/blocks/home/jobs-zoom' ) ?>
+<?php get_template_part( 'template-parts/blocks/home/testimonials' ) ?>
+<?php get_template_part( 'template-parts/blocks/home/partners' ) ?>
 <!--END  Pull HTML here-->
 <?php get_footer(); ?>

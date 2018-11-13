@@ -46,7 +46,7 @@
             <span class="header-quote"><?= get_field(AT_HEADER_QUOTE, 'option') ?></span>
             <?php get_template_part( 'template-parts/components/header/logo' ) ?>
             <?php get_template_part( 'template-parts/components/header/main-menu' ) ?>
-            <?php get_template_part( 'template-parts/components/header/little_menu' ) ?>
+            <?php get_template_part( 'template-parts/components/header/sub_menu' ) ?>
             <form method="POST" class="searchForm_header" action="#">
                 <div class="search-input-container">
                     <input type="text" placeholder="Recherche..." />

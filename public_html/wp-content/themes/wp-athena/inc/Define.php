@@ -13,6 +13,15 @@ define('AT_HEADER_QUOTE','at_header_quote');
 define('AT_SECOND_LOGO','at_second_logo');
 
 /**
+ * HeaderPage
+ **/
+define('INHNI_MEGA_MENU','inhni_mega_menu');
+define('INHNI_SUB_MENU','inhni_sub_menu');
+
+
+
+
+/**
  * Home Page
 **/
 

@@ -1,102 +1,41 @@
-<nav id="big_menu">
-    <ul>
-        <li>
-            <a href="#"><span>Entreprises</span></a>
-            <div class="sub_menu">
-                <div class="menu-featured menu-featured-image">
-                    <div class="image">
-                        <div class="lazy_image"
-                             style="background-image: url('<?= ASSETS_PATH . '/images/' ?>placeholder.gif');"
-                             data-lazy-src="<?= ASSETS_PATH . '/images/' ?>menu-featured.png">
-                            <noscript>
-                                <img src="<?= ASSETS_PATH . '/images/' ?>menu-featured.png" alt="menu featured"/>
-                            </noscript>
-                        </div>
+
+<?php if(have_rows(INHNI_MEGA_MENU,'option')):?>
+    <nav id="big_menu">
+        <ul>
+            <?php while(have_rows(INHNI_MEGA_MENU,'option')):the_row();?>
+                <?php
+                $parent_menu=get_sub_field('item_menu_parent','option');
+                $sub_menu_col1=get_sub_field('item_sub_menu_col_1','option');
+                $sub_menu_col2=get_sub_field('item_sub_menu_col_2','option');
+                $image_text_content=get_sub_field('image_text_content','option');
+                $class_flag="current";
+                ?>
+            <li class="<?= ($parent_menu['menu_parent_label'] =='Salariés')? $class_flag:''; ?>">
+                <a href="<?= $parent_menu['menu_parent_link'];?>"><span><?= $parent_menu['menu_parent_label'];?></span></a>
+                <div class="sub_menu">
+                    <div class="menu-featured">
+                        <span><?= $image_text_content;?></span>
                     </div>
+                    <ul>
+                        <?php foreach($sub_menu_col1 as $key=>$menu_col1):?>
+                        <li>
+                            <a href="<?= $menu_col1['link'];?>"><?= $menu_col1['label'];?></a>
+                        </li>
+                        <?php endforeach;?>
+                    </ul>
+                    <ul>
+                        <?php foreach($sub_menu_col2 as $key=>$menu_col2):?>
+                            <li>
+                                <a href="<?= $menu_col2['link'];?>"><?= $menu_col2['label'];?></a>
+                            </li>
+                        <?php endforeach;?>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="#">Nous vous accompagnons</a></li>
-                    <li><a href="#">Nous trouver</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Recruter en alternance</a></li>
-                    <li><a href="#">Former ses collaborateurs</a></li>
-                    <li><a href="#">inhni Conseil</a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="current">
-            <a href="#"><span>Salariés</span></a>
-            <div class="sub_menu">
-                <div class="menu-featured menu-featured-image">
-                    <div class="image">
-                        <div class="lazy_image"
-                             style="background-image: url('<?= ASSETS_PATH . '/images/' ?>placeholder.gif');"
-                             data-lazy-src="<?= ASSETS_PATH . '/images/' ?>menu-featured.png">
-                            <noscript>
-                                <img src="<?= ASSETS_PATH . '/images/' ?>menu-featured.png" alt="menu featured"/>
-                            </noscript>
-                        </div>
-                    </div>
-                </div>
-                <ul>
-                    <li><a href="#">Nous vous accompagnons</a></li>
-                    <li class="current"><a href="#">Comment financer sa formation ?</a></li>
-                    <li><a href="#">Zoom sur le CPF</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Nous trouver</a></li>
-                    <li><a href="#">Découvrir les formations</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <a href="#"><span>Jeunes</span></a>
-            <div class="sub_menu">
-                <div class="menu-featured">
-                    <span>Révélez<br/>votre talent et trouvez<br/>une orientation</span>
-                </div>
-                <ul>
-                    <li><a href="#">Pourquoi choisir l'alternance ?</a></li>
-                    <li><a href="#">Découvrir les métiers</a></li>
-                    <li><a href="#">Nous trouver</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Du CAP au Bac</a></li>
-                    <li><a href="#">Du Bac +2 au Bac +5</a></li>
-                    <li><a href="#">Offres en alternances à pourvoir</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <a href="#"><span>Prescripteurs</span></a>
-            <div class="sub_menu">
-                <div class="menu-featured"><span>Révélez<br/>votre talent et trouvez<br/>une orientation</span></div>
-                <ul>
-                    <li><a href="#">Lorem ipsum dolor sit amet ?</a></li>
-                    <li><a href="#">Nous trouver</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Découvrir les métiers</a></li>
-                    <li><a href="#">Découvrir les formations</a></li>
-                    <li><a href="#">Offres en alternances à pourvoir</a></li>
-                </ul>
-            </div>
-        </li>
-        <li>
-            <a href="#"><span>Demandeurs d'emploi</span></a>
-            <div class="sub_menu">
-                <div class="menu-featured"><span>Révélez<br/>votre talent et trouvez<br/>une orientation</span></div>
-                <ul>
-                    <li><a href="#">Intégrer le secteur de la propreté</a></li>
-                    <li><a href="#">Nous trouver</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Découvrir les formations</a></li>
-                    <li><a href="#">Comment financer sa formation</a></li>
-                    <li><a href="#">Offres en alternances à pourvoir</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</nav>
+            </li>
+            <?php endwhile; ?>
+        </ul>
+    </nav>
+<?php endif;?>
+
+
+

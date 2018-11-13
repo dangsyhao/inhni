@@ -1,6 +1,6 @@
 <?php while(have_rows(INHNI_JOB_OFFERS)):the_row();?>
     <?php
-        $job_obffer_title=get_sub_field(INHNI_JOB_OFFER_TITLE);
+        $job_obffer_title = get_sub_field(INHNI_JOB_OFFER_TITLE);
         $job_obffer_detail=get_sub_field(INHNI_JOB_OFFERS_DETAILS);
         $job_obffer_content=get_sub_field(INHNI_JOB_OFFERS_CONTENT);
         $job_obffer_link=get_sub_field(INHNI_JOB_OFFERS_LINK);

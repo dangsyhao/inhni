@@ -1,20 +1,16 @@
-<?php while(have_rows(INHNI_JOB_OFFERS)):the_row();?>
-    <?php
-        $job_obffer_title = get_sub_field(INHNI_JOB_OFFER_TITLE);
-        $job_obffer_detail=get_sub_field(INHNI_JOB_OFFERS_DETAILS);
-        $job_obffer_content=get_sub_field(INHNI_JOB_OFFERS_CONTENT);
-        $job_obffer_link=get_sub_field(INHNI_JOB_OFFERS_LINK);
-    ?>
-    <a class="job" href="<?= $job_obffer_link[INHNI_JOB_OFFERS_LINK_URL]?>" title="<?php _e("Consulter l'offre d'emploi",DOMAIN);?>">
-        <h4 class="title-4"><?= $job_obffer_title;?></h4>
-        <ul class="details">
-            <li class="school"><?= $job_obffer_detail[INHNI_JOB_OFFERS_DETAILS_SCHOOL]?></li>
-            <li class="location"><?= $job_obffer_detail[INHNI_JOB_OFFERS_DETAILS_LOCATION]?></li>
-            <li class="money"><?= $job_obffer_detail[INHNI_JOB_OFFERS_DETAILS_MONEY]?></li>
-        </ul>
-        <p><?= $job_obffer_content; ?> </p>
-        <span class="link-arrow link-arrow-align-right link-arrow-white">
-            <span class="<?= $job_obffer_link[INHNI_JOB_OFFERS_LINK_URL]?>"><?php _e("Voir l'annonce",DOMAIN);?></span>
-        </span>
-    </a>
-<?php endwhile; ?>
+
+<?php $job_offer_items = get_sub_field('job_offer_items');?>
+    <?php foreach($job_offer_items as $key=>$items):?>
+        <a class="job" href="<?= $items['detail_link']?>" title="<?php _e("Consulter l'offre d'emploi",DOMAIN);?>">
+            <h4 class="title-4"><?= $items['title'];?></h4>
+            <ul class="details">
+                <li class="school"><?= $items['details']['school']?></li>
+                <li class="location"><?= $items['details']['location']?></li>
+                <li class="money"><?= $items['details']['money']?></li>
+            </ul>
+            <p><?= $items['excerpt']; ?> </p>
+            <span class="link-arrow link-arrow-align-right link-arrow-white">
+                <span class="<?= $items['detail_link']?>"><?php _e("Voir l'annonce",DOMAIN);?></span>
+            </span>
+        </a>
+    <?php endforeach;?>

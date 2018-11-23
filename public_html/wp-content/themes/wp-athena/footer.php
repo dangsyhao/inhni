@@ -1,5 +1,10 @@
 
 <footer id="footer">
+    <?php
+    global $query_string;
+    echo ($query_string) ;
+    ?>
+
     <div class="footer-top">
         <div class="wrapper">
             <div class="footer-top-left">
@@ -23,13 +28,11 @@
             </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <div class="wrapper">
-                     <?php get_template_part( 'template-parts/footer/big-menu' ) ?>
 
-            <p class="copyright">INHNI © Copyright 2018</p>
-        </div>
+    <div class="footer-bottom">
+        <?php get_template_part( 'template-parts/footer/big-menu' ) ?>
     </div>
+
 </footer>
 <?php wp_footer(); ?>
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto+Condensed:400,500,700|Roboto:300,400,500|Source+Serif+Pro:600,700,900" rel="stylesheet">

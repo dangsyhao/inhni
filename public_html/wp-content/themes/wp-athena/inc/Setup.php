@@ -26,12 +26,24 @@ add_action( 'wp_enqueue_scripts', 'athena_scripts' );
 **/
 add_action('init', 'athena_setup');
 function athena_setup(){
+
+    //Register Nav Menu
     register_nav_menus( array(
-        'athena_main_menu' => __('Main Menu', DOMAIN)
+        'athena_main_menu' => __('Main Menu', DOMAIN),
+        'athena_footer_bottom_menu' => __('Footer Bottom Menu', DOMAIN)
     ) );
+
+    // Add Theme Support
     add_theme_support( 'post-thumbnails' );
+
+    // Add Theme Support
     add_post_type_support( 'page', 'excerpt' );
-}
+
+
+
+
+
+}//Athena Setup
 
 /**
  * Add Theme Support -Post Formats

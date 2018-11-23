@@ -12,15 +12,19 @@
             </noscript>
         </div>
     </div>
-    <?php while(have_rows(INHNI_TESTIMONIALS_BLOC)):the_row();?>
+
     <div class="content">
         <div class="wrapper">
             <div class="testimonials">
-                <?php get_template_part('template-parts/components/home/testimonial');?>
+                <?php while(have_rows(INHNI_TESTIMONIALS_BLOC)):the_row();?>
+                    <div class="testimonial">
+                        <p class="txt"><?= get_sub_field('talk_contents'); ?></p>
+                        <p class="someone"><?= get_sub_field('customers'); ?></p>
+                    </div>
+                <?php endwhile; ?>
             </div>
+
         </div>
     </div>
-    <?php endwhile; ?>
-
     </div>
 <?php endif;?>

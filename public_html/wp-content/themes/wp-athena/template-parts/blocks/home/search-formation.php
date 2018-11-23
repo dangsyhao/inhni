@@ -37,12 +37,9 @@
     <div class="wrapper">
         <h1 class="title-1">Accédez à 105 formations continues</h1>
         <p class="desc">dans le secteur de l'hygiène, de la propreté et de l'environnement</p>
-        <form method="POST" action="#">
-            <div class="search-formation-input-container">
-                <input type="text" placeholder="Cycles métier, chantier propreté, code stage..."/>
-                <button type="submit"></button>
-            </div>
-        </form>
+
+            <?php get_search_form(); ?>
+
         <p class="sep">Ou</p>
         <div class="links">
             <a href="#" title="Trouvez votre voie" class="link">

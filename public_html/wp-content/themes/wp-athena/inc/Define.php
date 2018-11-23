@@ -26,7 +26,7 @@ define('INHNI_SUB_MENU','inhni_sub_menu');
 **/
 
 //Hot News
-define('INHNI_HOT_NEWS','inhni_hot_news');
+define('INHNI_LATEST_NEWS','inhni_latest_news');
 
 //Number Block
 define('INHNI_NUMBERS_BLOC','inhni_numbers_bloc');

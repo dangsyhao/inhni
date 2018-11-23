@@ -1,0 +1,258 @@
+.title-1 {
+	font-family: $font-4;
+	font-size: 38px;
+	font-weight: 700;
+	letter-spacing: -0.05px;
+	line-height: 35px;
+	@media screen and (max-width: $tablet-medium) {
+		font-size: 36px;
+		line-height: 33px;
+	}
+	@media screen and (max-width: $tablet-small) {
+		font-size: 32px;
+		line-height: 29px;
+	}
+	&.blue-polygon {
+		position: relative;
+		padding-left: 40px;
+		color: $textcolor-1;
+		span {
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 25px;
+			width: 137px;
+			background-color: $textcolor-3;
+			left: 5px;
+			bottom: -4px;
+			z-index: 1;
+			transform: skewX(-20deg);
+		}
+	}
+
+	&.title-center {
+		text-align: center;
+
+		&.blue-polygon {
+			padding-left: 0;
+
+			&:before {
+				left: 50%;
+				transform: translateX(-50%) skewX(-20deg);
+			}
+		}
+	}
+}
+
+.title-2 {
+	font-family: $font-1;
+	font-size: 22px;
+	font-weight: 900;
+	letter-spacing: 0.03px;
+	line-height: 27px;
+	@media screen and (max-width: $tablet-medium) {
+		font-size: 21px;
+		line-height: 26px;
+	}
+	@media screen and (max-width: $tablet-small) {
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+.title-3 {
+	font-family: $font-1;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: -0.04px;
+	line-height: 35px;
+	@media screen and (max-width: $tablet-medium) {
+		font-size: 29px;
+		line-height: 34px;
+	}
+	@media screen and (max-width: $tablet-small) {
+		font-size: 28px;
+		line-height: 33px;
+	}
+}
+
+.title-4 {
+	font-family: $font-1;
+	font-size: 17px;
+	font-weight: 900;
+	letter-spacing: 0.26px;
+	line-height: 21px;
+	@media screen and (max-width: $tablet-medium) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	@media screen and (max-width: $tablet-small) {
+		font-size: 15px;
+		line-height: 19px;
+	}
+}
+
+.title-5 {
+	font-family: $font-1;
+	font-size: 18px;
+	font-weight: 900;
+	letter-spacing: 0.27px;
+	line-height: 22px;
+	@media screen and (max-width: $tablet-medium) {
+		font-size: 17px;
+		line-height: 21px;
+	}
+	@media screen and (max-width: $tablet-small) {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+.title-6 {
+	font-family: $font-4;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.27px;
+	line-height: 23px;
+	@media screen and (max-width: $tablet-medium) {
+		font-size: 17px;
+		line-height: 22px;
+	}
+	@media screen and (max-width: $tablet-small) {
+		font-size: 16px;
+		line-height: 21px;
+	}
+	&.blue-polygon {
+		position: relative;
+		padding-left: 21px;
+		span {
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 16px;
+			width: 91px;
+			background-color: rgba($textcolor-3, 0.15);
+			left: 5px;
+			bottom: -4px;
+			z-index: 1;
+			transform: skewX(-20deg);
+		}
+	}
+}
+
+.title-7 {
+	font-family: $font-4;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.03px;
+	line-height: 30px;
+
+	&.title-center {
+		text-align: center;
+	}
+}
+
+
+.title-8 {
+	font-family: $font-4;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.03px;
+	color: $maincolor-1;
+	line-height: 30px;
+}
+
+//.title-9 {}
+
+.title-10 {
+	font-family: $font-1;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 23px;
+	letter-spacing: 0;
+}
+
+.title-11 {
+	font-family: $font-4;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: -0.04px;
+	line-height: 35px;
+
+	&.blue-polygon {
+		position: relative;
+		padding-left: 40px;
+		color: $textcolor-1;
+		span {
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 25px;
+			width: 137px;
+			background-color: $textcolor-3;
+			left: 5px;
+			bottom: -4px;
+			z-index: 1;
+			transform: skewX(-20deg);
+		}
+	}
+}
+
+.title-12 {
+	font-family: $font-1;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.33px;
+	line-height: 28px;
+}
+
+.title-13 {
+	font-family: $font-4;
+	font-size: 22px;
+	font-weight: 900;
+	letter-spacing: 0.03px;
+	line-height: 30px;
+
+	&.blue-polygon {
+		position: relative;
+		padding-left: 20px;
+		color: $textcolor-1;
+		span {
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 25px;
+			width: 137px;
+			background-color: $textcolor-3;
+			left: 5px;
+			bottom: -4px;
+			z-index: 1;
+			transform: skewX(-20deg);
+		}
+	}
+}
+
+.title-14 {
+	font-family: $font-4;
+	font-size: 18px;
+	font-weight: 900;
+	letter-spacing: 0.03px;
+	line-height: 25px;
+}

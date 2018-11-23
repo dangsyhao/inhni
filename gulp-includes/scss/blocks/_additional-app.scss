@@ -1,0 +1,54 @@
+.additional-app-bloc {
+	background-color: $color-gray!important; //for print
+	padding: 15px;
+	margin-top: 30px;
+
+	@media screen and (min-width: 641px) {
+		padding: 30px;
+	}
+
+	ul {
+		li {
+			margin-bottom: 18px;
+
+			h3 {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin-bottom: 8px;
+
+				i {
+					margin-right: 20px;
+				}
+
+				span {
+					color: #009DDD;
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 23px;
+					text-transform: uppercase;
+				}
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 23px;
+			}
+		}
+	}
+
+	.promotion {
+		background-color: #ffffff!important;//for print
+		padding: 10px;
+		text-align: center;
+		color: #1E5091;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing: 0.02px;
+		line-height: 19px;
+
+		span {
+			color: #000000;
+		}
+	}
+}

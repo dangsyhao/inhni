@@ -1,0 +1,65 @@
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+{# Compiled final .html file destination. #}
+{# Path must be relative to the directory set in your gulp-includes/gulp-configuration.js #}
+{% set output_path = './fiche-formation-alternance.html' %}
+
+{% extends '../_layout.html.twig' %}
+
+{% block htmlclass %}page-home-html{% endblock %}
+{% block bodyclass %}page-home-body{% endblock %}
+
+{% block title %}Accueil - {{ parent() }}{% endblock %}
+
+{% block content %}
+    <div class="breadcrumb-bloc">
+        <div class="content">
+            <div class="wrapper">
+                <p id="breadcrumbs">
+                    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="http://my-website-url.com/" itemprop="url" title="Go to homepage">
+                            <span itemprop="title">Accueil</span>
+                        </a>
+                        <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                            <a href="http://my-website-url.com/whatever-archive-category-page/" itemprop="url">
+                                <span itemprop="title">Formations</span>
+                            </a>
+                            <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a href="http://my-website-url.com/whatever-archive-category-page/subpage" itemprop="url">
+                                    <span itemprop="title">Formations en alternance</span>
+                                </a>
+                                <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                    <a href="http://my-website-url.com/whatever-archive-category-page/subpage" itemprop="url">
+                                        <span itemprop="title">Responsable Développement Hygiène, Propreté…</span>
+                                    </a>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% include '../blocks/_fiche-formation-alternance.twig' %}
+    {% include '../blocks/_jobs-zoom-fiche-formation-alternance.twig' %}
+    {% include '../blocks/_testimonials-fiche.twig' %}
+    {% include '../blocks/_jobs-offers-fiche-formation-alternance.twig' %}
+{% endblock %}

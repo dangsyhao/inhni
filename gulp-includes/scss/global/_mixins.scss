@@ -48,7 +48,7 @@ p {
 */
 
 //============================================================
-// Fontello
+// Fonts
 //============================================================
 
 @mixin fontello {
@@ -58,6 +58,81 @@ p {
   font-style: normal;
   text-decoration: none;
   user-select: none;
+}
+
+@mixin fontinhni {
+  font-family: 'inhni' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+&:before {
+  @include fontello;
+  content: '\E801';
+}
+*/
+
+//============================================================
+// BigMenuColor
+//============================================================
+
+@mixin bigMenuColor($color) {
+  & > a {
+    span {
+      &:before {
+        background: $color;
+      }
+    }
+  }
+  &:hover,
+  &:active {
+    & > a {
+      color: $color;
+      &:after {
+        color: $color;
+      }
+    }
+  }
+  &.current {
+    & > a {
+      color: $color;
+      &:after {
+        color: $color;
+      }
+    }
+  }
+  .sub_menu {
+    .menu-featured {
+      background-color: $color;
+      &:before {
+        color: rgba(darken($color, 33%), 0.3);
+      }
+    }
+    ul {
+      li {
+        a {
+          &:hover,
+          &:active {
+            color: $color;
+          }
+        }
+        &.current {
+          a {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
 }
 
 //============================================================
@@ -75,4 +150,27 @@ p {
   @media screen and (max-width: $tablet-small) {
     padding: 40px 0;
   }
+}
+
+//============================================================
+// absolute-center
+//============================================================
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute-center-horizontal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin absolute-center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

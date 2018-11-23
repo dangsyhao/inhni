@@ -1,0 +1,113 @@
+.editor-bloc-top{
+	position: relative;
+	display: block;
+}
+.present-list {
+	background-color: $color-gray!important; // for print
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-shadow: 0 2px 12px 0 $colorline2;
+	border-radius: 2px;
+	margin-bottom: 35px;
+	text-align: center;
+
+	li {
+		padding: 10px;
+		width: 50%;
+
+		@media print {
+			width: 25%;
+		}
+
+		@media screen and (min-width: 641px) {
+			width: 25%;
+		}
+
+		+ li {
+			border-left: 1px solid $colorline2;
+
+			@media print {
+				border-left: 0;
+			}
+		}
+
+		.title-10 {
+			color: $maincolor-4;
+		}
+
+		.des {
+			color: $textcolor-1;
+			font-family: $font-1;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 19px;
+
+			span {
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 15px;
+			}
+		}
+
+		.unit {
+			color: $textcolor-1;
+			font-family: $font-1;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 15px;
+		}
+	}
+}
+
+.present-list-detail {
+	background-color: $color-gray;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-shadow: 0 2px 12px 0 $colorline2;
+	border-radius: 2px;
+	margin-bottom: 30px;
+	padding: 20px 0;
+
+	li {
+		padding: 5px 15px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+
+		@media screen and (min-width: 641px) {
+			padding: 5px 30px;
+			width: 50%;
+		}
+
+		&:nth-child(2n) {
+			@media screen and (min-width: 641px) {
+				border-left: 1px solid $colorline2;
+			}
+		}
+
+		i {
+			margin-right: 15px;
+		}
+
+		.des {
+			color: $textcolor-1;
+			font-family: $font-1;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 19px;
+
+			span {
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 15px;
+			}
+		}
+	}
+}

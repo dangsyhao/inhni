@@ -1,0 +1,15 @@
+<div class="testimonials-bloc">
+    <div class="content">
+        <div class="wrapper">
+            <h3 class="title-1 blue-polygon title-center">
+                <span>Témoignages</span>
+            </h3>
+
+            <div class="testimonials">
+                {% for i in 1..5 %}
+                    {% include '../components/_testimonial.twig' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

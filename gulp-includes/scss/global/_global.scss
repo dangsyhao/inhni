@@ -1,7 +1,36 @@
 body {
-  font-family: $font-1; //Default font family
-  color: $textcolor-1; //Default text color
-  letter-spacing: normal; //Default letter spacing
-  font-size: 16px; //Default font size
-  line-height: 1.15; //Default line height
+	font-family: $font-1; //Default font family
+	color: $textcolor-1; //Default text color
+	letter-spacing: 0.05px; //Default letter spacing
+	font-size: 16px; //Default font size
+	line-height: 1.15; //Default line height
+
+	@media print {
+		padding-top: 0!important;
+	}
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+.back-top {
+	background-color: $maincolor-1;
+	padding: 10px;
+	position: fixed;
+	right: 0;
+	bottom: 70px;
+	@include size(45px, 45px);
+	z-index: 9;
+	display: none;
+
+	i {
+		@include absolute-center();
+		color: $white;
+		font-size: 20px;
+	}
+
+	span {
+		display: none;
+	}
 }

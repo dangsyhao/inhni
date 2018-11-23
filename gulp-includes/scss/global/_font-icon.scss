@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'inhni';
+	src:  url('../fonts/inhni/inhni.eot?#{$random}#iefix') format('embedded-opentype'),
+	url('../fonts/inhni/inhni.ttf?#{$random}') format('truetype'),
+	url('../fonts/inhni/inhni.woff?#{$random}') format('woff'),
+	url('../fonts/inhni/inhni.svg?#{$random}#inhni') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='i-'], [class*=' i-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'inhni' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-close:before {
+	content: '\e91f';
+}
+.i-direction:before {
+	content: '\e91e';
+	color: #009ddd;
+}
+.i-up-arrow:before {
+	content: '\e900';
+}
+.i-before:before {
+	content: '\e901';
+	color: #1e5091;
+}
+.i-calendar:before {
+	content: '\e902';
+	color: #1e5091;
+}
+.i-checkbox:before {
+	content: '\e903';
+	color: #1e5091;
+}
+.i-contrat:before {
+	content: '\e904';
+	color: #1e5091;
+}
+.i-diplome:before {
+	content: '\e905';
+	color: #1e5091;
+}
+.i-down-arrow:before {
+	content: '\e906';
+}
+.i-down-arrow-angle:before {
+	content: '\e907';
+}
+.i-download:before {
+	content: '\e908';
+	color: #009ddd;
+}
+.i-euro:before {
+	content: '\e909';
+	color: #1e5091;
+}
+.i-facebook:before {
+	content: '\e90a';
+}
+.i-filter:before {
+	content: '\e90b';
+}
+.i-information:before {
+	content: '\e90c';
+	color: #1e5091;
+}
+.i-learn:before {
+	content: '\e90d';
+	color: #1e5091;
+}
+.i-left-arrow:before {
+	content: '\e90e';
+}
+.i-left-arrow-angle:before {
+	content: '\e90f';
+}
+.i-more:before {
+	content: '\e910';
+	color: #1e5091;
+}
+.i-people:before {
+	content: '\e911';
+	color: #1e5091;
+}
+.i-pin:before {
+	content: '\e912';
+	color: #1e5091;
+}
+.i-plus:before {
+	content: '\e913';
+}
+.i-print:before {
+	content: '\e914';
+	color: #009ddd;
+}
+.i-right-arrow:before {
+	content: '\e915';
+}
+.i-right-arrow-angle:before {
+	content: '\e916';
+}
+.i-search:before {
+	content: '\e917';
+}
+.i-send:before {
+	content: '\e918';
+	color: #009ddd;
+}
+.i-share:before {
+	content: '\e919';
+	color: #009ddd;
+}
+.i-target:before {
+	content: '\e91a';
+	color: #1e5091;
+}
+.i-time:before {
+	content: '\e91b';
+	color: #1e5091;
+}
+.i-up-arrow-angle:before {
+	content: '\e91c';
+}
+.i-user:before {
+	content: '\e91d';
+	color: #1e5091;
+}
+
+/* Circle icon */
+
+.i-circle {
+	font-size: 45px;
+}

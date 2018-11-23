@@ -1,0 +1,131 @@
+.toolbar-fixed {
+	padding-top: 132px!important;
+
+	&.toolbar-vertical {
+		padding-top: 171px!important;
+
+		#header {
+			top: 39px;
+		}
+	}
+
+	&.toolbar-horizontal {
+		padding-top: 210px!important;
+
+		#header {
+			top: 78px;
+		}
+	}
+
+	&.sticky-header {
+		#header {
+			#little_menu {
+				.contextual-region {
+					.contextual {
+						top: 51px;
+
+						.contextual-links a {
+							color: $maincolor-1!important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.block-local-tasks-68 {
+	ul {
+		text-align: center;
+		padding: 15px 0;
+		font-size: 18px;
+		border-top: 1px dashed $colorline2;
+		border-bottom: 1px dashed $colorline2;
+
+		li {
+			display: inline-block;
+
+			+ li {
+				margin-left: 15px;
+			}
+
+			a {
+				&:hover {
+					color: $maincolor-1;
+				}
+			}
+		}
+	}
+}
+
+.user-login-form ,
+.user-pass {
+	@include blocPadding;
+
+	label {
+		display: block;
+		font-weight: 600;
+		color: $maincolor-1;
+		font-family: 'Lato', sans-serif;
+		margin-bottom: 10px;
+		margin-top: 30px;
+		font-size: 17px;
+	}
+
+	input {
+		&[type='text'],
+		&[type='email'],
+		&[type='password'] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid $colorline2;
+			margin-bottom: 5px;
+		}
+
+		&[type='submit'] {
+			background-color: $maincolor-1;
+			color: $textcolor-2;
+			font-size: 17px;
+			letter-spacing: 0.51px;
+			text-align: center;
+			padding: 10px 20px;
+			margin-top: 30px;
+			font-weight: 700;
+		}
+	}
+
+	button {
+		&[type='submit'] {
+			background-color: $maincolor-1;
+			color: $textcolor-2;
+			font-size: 17px;
+			letter-spacing: 0.51px;
+			text-align: center;
+			padding: 10px 20px;
+			margin-top: 30px;
+			font-weight: 700;
+		}
+	}
+
+	.description {
+		font-style: italic;
+		font-size: 13px;
+	}
+
+	.captcha {
+		font-size: 0;
+		margin-top: 25px;
+	}
+}
+
+.pg-text-bloc-68 {
+	.editor-bloc {
+		p {
+			margin-left: 0;
+		}
+	}
+}
+
+.block-title-68 {
+	margin-top: 40px;
+}

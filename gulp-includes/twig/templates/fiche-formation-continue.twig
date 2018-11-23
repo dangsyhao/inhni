@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+{# Compiled final .html file destination. #}
+{# Path must be relative to the directory set in your gulp-includes/gulp-configuration.js #}
+{% set output_path = './fiche-formation-continue.html' %}
+
+{% extends '../_layout.html.twig' %}
+
+{% block htmlclass %}page-home-html{% endblock %}
+{% block bodyclass %}page-home-body{% endblock %}
+
+{% block title %}Accueil - {{ parent() }}{% endblock %}
+
+{% block content %}
+    {% include '../blocks/_breadcrumb.twig' %}
+    {% include '../blocks/_fiche-formation-continue.twig' %}
+    {% include '../blocks/_testimonials-fiche.twig' %}
+    {% include '../blocks/_formations.twig' %}
+{% endblock %}

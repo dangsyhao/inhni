@@ -10,6 +10,7 @@ $auto_base64_node_modules_css_weight_limit: 5;
 
 @import 'bourbon';
 @import 'global/mixins';
+ @import 'global/font-icon';
 
 @font-face {
   font-family: 'fontello';
@@ -26,10 +27,14 @@ $auto_base64_node_modules_css_weight_limit: 5;
 
 @import '../../node_modules/slick-carousel/slick/slick.css';
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+@import '../../node_modules/jquery.scrollbar/sass/jquery.scrollbar.scss';
 
 @import 'global/layout';
 @import 'global/global';
+@import 'global/titles';
+@import 'global/admin-drupal';
 
+@import 'includes/**/*.scss';
 @import 'components/**/*.scss';
 @import 'blocks/**/*.scss';
 @import 'templates/**/*.scss';

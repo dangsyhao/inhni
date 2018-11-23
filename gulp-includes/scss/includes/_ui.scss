@@ -1,0 +1,94 @@
+.ui-autocomplete {
+	max-height: 300px;
+	overflow: hidden;
+	overflow-y: auto;
+	.ui-menu-item {
+		padding: 0;
+		border-color: $colorline2;
+
+		&.ui-autocomplete-field-group {
+			background: $maincolor-3;
+			padding: 15px;
+			color: $white;
+			display: block;
+		}
+
+		.ui-menu-item-wrapper {
+			display: block;
+			padding: 15px;
+
+			&.ui-state-active {
+				border: 1px solid transparent;
+				border-bottom: 1px solid $colorline2;
+				border-top: 1px solid $colorline2;
+				background: $maincolor-1;
+				font-weight: normal;
+				color: $white;
+
+				.ui-autocomplete-fields{
+					.ui-autocomplete-field-title {
+						color: $white;
+					}
+					& > * {
+						color: $white;
+
+						&:first-child {
+							color: $white;
+						}
+					}
+				}
+			}
+
+			.ui-autocomplete-fields {
+				& > * {
+					color: $textcolor-1;
+
+					&:first-child {
+						color: $textcolor-1;
+					}
+				}
+			}
+		}
+
+		.ui-state-active,
+		.ui-widget-content .ui-state-active,
+		.ui-widget-header .ui-state-active,
+		a.ui-button:active,
+		.ui-button:active,
+		.ui-button.ui-state-active:hover {
+			border: 1px solid $colorline2;
+			background: $maincolor-1;
+		}
+	}
+}
+
+.ui-widget {
+	&.ui-widget-content {
+		box-shadow: none;
+		border: 0;
+		margin-left: -20px;
+		max-width: 255px!important;
+		min-width: 200px;
+		width: auto !important;
+
+		@media screen and (max-width: 1440px){
+			margin-left: -20px;
+			width: 100% !important;
+			max-width: none !important;
+		}
+
+		> li {
+			&.ui-menu-item {
+				border: 0;
+				border-bottom: 1px solid $colorline3;
+			}
+		}
+	}
+	&[data-sa-theme='basic-blue']{
+		> li{
+			&.ui-menu-item{
+				padding: 0;
+			}
+		}
+	}
+}

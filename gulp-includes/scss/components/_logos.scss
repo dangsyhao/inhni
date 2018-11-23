@@ -1,0 +1,47 @@
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+
+	@media print {
+		display: block;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 125px;
+		height: 51.46px;
+		width: 1px;
+		background: rgba(#868685, 0.8);
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
+
+		img {
+			user-select: none;
+		}
+
+		&.logo {
+			margin-right: 30.5px;
+
+			img {
+				width: 108.57px;
+			}
+		}
+
+		&.proprete {
+			img {
+				width: 126.53px;
+			}
+		}
+	}
+}

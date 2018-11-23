@@ -1,0 +1,29 @@
+.tags {
+	font-size: 0;
+	letter-spacing: 0;
+
+	&.tags-2 {
+		li {
+			background-color: $maincolor-2;
+		}
+	}
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 23px;
+		background-color: $maincolor-1;
+		color: $textcolor-2;
+		text-transform: uppercase;
+		font-size: 11px;
+		letter-spacing: 0.51px;
+		text-align: center;
+		padding: 3px 16px;
+		user-select: none;
+		margin-top: 5px;
+
+		&:not(:last-of-type) {
+			margin-right: 15px;
+		}
+	}
+}

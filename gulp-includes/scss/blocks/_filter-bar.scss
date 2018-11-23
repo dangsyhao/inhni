@@ -1,0 +1,157 @@
+.filter-bloc {
+	padding: 36px 0;
+
+	form {
+		@media screen and (min-width: 993px) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.form-title {
+			font-size: 18px;
+			font-weight: 600;
+			letter-spacing: -0.02px;
+			line-height: 35px;
+			flex-shrink: 0;
+			margin-right: 20px;
+
+			i {
+				font-size: 22px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.list-option {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-grow: 1;
+		flex-wrap: wrap;
+
+		.checkbox {
+			margin-right: 10px;
+
+			@media screen and (max-width: 992px) {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.filter-type2-bloc {
+	padding: 36px 0;
+
+	form {
+		margin-top: 30px;
+
+		@media screen and (min-width: 993px) {
+			//display: flex;
+			//flex-direction: row;
+			//justify-content: space-between;
+			//align-items: center;
+			//flex-wrap: wrap;
+			display: inline-block;
+		}
+
+		.select2 {
+			margin-top: 10px;
+		}
+
+		.or {
+			padding: 0 30px;
+			position: relative;
+			margin-right: 15px;
+			white-space: nowrap;
+
+			&:before {
+				content: '';
+				@include size(20px, 1px);
+				background-color: $maincolor-1;
+				@include absolute-center-vertical;
+				left: 0;
+			}
+
+			&:after {
+				content: '';
+				@include size(20px, 1px);
+				background-color: $maincolor-1;
+				@include absolute-center-vertical;
+				right: 0;
+			}
+		}
+
+		.wrap {
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		label {
+			display: inline-block;
+			margin-right: 15px;
+
+			@media screen and (max-width: 992px) {
+				margin: 15px 0 10px;
+			}
+		}
+
+		.hasReset {
+			width: 200px;
+			position: relative;
+			display: inline-block;
+
+			@media screen and (max-width: 480px) {
+				width: 100%;
+				display: block;
+			}
+
+			&.show {
+				i {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+
+			input {
+				width: 100%;
+				padding: 10px;
+				border-bottom: 1px solid $colorline2;
+				font-style: italic;
+			}
+
+			i {
+				opacity: 0;
+				visibility: hidden;
+				@include absolute-center-vertical;
+				right: 0;
+				cursor: pointer;
+			}
+		}
+
+
+	}
+
+	.list-select {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.select2 {
+			@media screen and (max-width: 992px) {
+				margin-bottom: 10px;
+			}
+
+			@media screen and (min-width: 993px) {
+				min-width: 190px;
+				width: auto!important;
+				margin-left: -1px;
+			}
+		}
+	}
+}

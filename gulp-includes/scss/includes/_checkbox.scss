@@ -1,0 +1,54 @@
+.checkbox {
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+
+		&:checked {
+			~ label {
+				background-color: $maincolor-2;
+				border-color: $maincolor-2;
+				color: #ffffff;
+
+				&:before {
+					border-color: #ffffff;
+				}
+
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+
+	label {
+		position: relative;
+		@include size(242px, 40px);
+		border: 1px solid #979797;
+		border-radius: 2px;
+		padding: 10px 20px 12px 50px;
+		color: #696E78;
+		font-size: 17px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		display: block;
+		width: auto;
+
+		&:before {
+			content: '';
+			@include absolute-center-vertical;
+			@include size(16px, 16px);
+			border: 1px solid #696E78;
+			border-radius: 2px;
+			left: 20px;
+		}
+
+		&:after {
+			@include absolute-center-vertical;
+			@include size(10px, 10px);
+			background-color: #ffffff;
+			border-radius: 2px;
+			left: 23px;
+		}
+	}
+}

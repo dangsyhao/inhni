@@ -1,0 +1,46 @@
+.extend-block {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4px 8px;
+
+	@media print {
+		display: none;
+	}
+
+	li {
+		color: $maincolor-2;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: $maincolor-3;
+
+			i {
+				&:before {
+					color: inherit;
+				}
+			}
+		}
+
+		a {
+			display: block;
+			text-align: center;
+		}
+
+		i {
+			display: block;
+			margin: 0 auto;
+		}
+
+		span {
+			display: block;
+			font-size: 11px;
+			font-weight: bold;
+			letter-spacing: 0.2px;
+			line-height: 13px;
+			margin-top: 7px;
+		}
+
+	}
+}

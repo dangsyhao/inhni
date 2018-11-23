@@ -1,0 +1,208 @@
+{#
+/**
+ * @file
+ *
+ * Available variables
+ * - project_name
+ * - project_short_name
+ * - css_files
+ * - js_files
+ * - html_files
+ * - favicon_url
+ * - img_url
+ * - lang_code
+ * - lang_code_extended
+ * - favicon_color
+ *
+ */
+#}
+
+{# Compiled final .html file destination. #}
+{# Path must be relative to the directory set in your gulp-includes/gulp-configuration.js #}
+{% set output_path = './test.html' %}
+
+{% extends '../_layout.html.twig' %}
+
+{% block htmlclass %}page-home-html{% endblock %}
+{% block bodyclass %}page-home-body{% endblock %}
+
+{% block title %}Accueil - {{ parent() }}{% endblock %}
+
+{% block pre_content %}
+    <!--
+    Include this snippet only on the frontpage.
+    Testing tool : https://search.google.com/structured-data/testing-tool
+    Documentation : https://developers.google.com/search/docs/data-types/sitelinks-searchbox
+    -->
+    <script type='application/ld+json'>
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://www.inhni.com/#website",
+          "url": "https://www.inhni.com/",
+          "name": "{{ project_name }}",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.inhni.com/search?keys={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% include '../blocks/_banner.twig' %}
+
+    <div id="block-inhni-theme-content">
+
+        <section class="news-list-68 featured-news-bloc">
+            <div class="wrapper">
+                <div class="view-header editor-bloc">
+                    <h1 class="title-9">À la une </h1>
+                </div>
+                <div class="view-filters filter-type2-bloc">
+                    <form class="views-exposed-form bef-exposed-form" data-bef-auto-submit-full-form="" data-drupal-selector="views-exposed-form-news-list-page-1" action="/news" method="get" id="views-exposed-form-news-list-page-1" accept-charset="UTF-8">
+                        <div class="js-form-item form-item js-form-type-select form-item-tid js-form-item-tid form-no-label">
+                            <select data-drupal-selector="edit-tid" id="edit-tid" name="tid" class="form-select"><option value="All" selected="selected">- Tout -</option><option value="1">Actualités</option><option value="2">Lorem Ipsum</option><option value="67">Salon/Forum</option><option value="68">test category</option></select>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <div class="views-element-container">
+
+
+            <section
+                    class="videos-list-68 view view-videos view-id-videos view-display-id-page_1">
+                {#<div class="wrapper">#}
+
+                    <div class="view-header editor-bloc">
+                        <h1 class="title-9">Videos </h1>
+                    </div>
+
+                    <div class="view-content">
+                        <div class="jobs-zoom-bloc">
+                            <div class="wrapper">
+                                <div class="zooms">
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                        <h4 class="title-5"> Vidéo 3
+                                        </h4>
+                                        <p> Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes
+                                            etiam si lap…</p>
+                                    </a>
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                        <h4 class="title-5"> Vidéo 1
+                                        </h4>
+                                        <p> Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes
+                                            etiam si lap…</p>
+                                    </a>
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                        <h4 class="title-5"> Vidéo 1
+                                        </h4>
+                                        <p> Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes
+                                            etiam si lap…</p>
+                                    </a>
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                        <h4 class="title-5"> Vidéo 1
+                                        </h4>
+                                        <p> Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes
+                                            etiam si lap…</p>
+                                    </a>
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                        <h4 class="title-5"> Vidéo 1
+                                        </h4>
+                                        <p> Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes
+                                            etiam si lap…</p>
+                                    </a>
+                                    <a data-type="" data-fancybox="" class="zoom"
+                                       href="https://www.youtube.com/embed/videoseries" title="En savoir plus sur le métier">
+                                        <div class="image video">
+                                            <div class="lazy_image"
+                                                 style="background-image: url('{{ img_url }}placeholder.gif');"
+                                                 data-lazy-src="{{ img_url }}zoom.jpg">
+                                                <noscript>
+                                                    <img src="{{ img_url }}zoom.jpg" alt="Agent qualifié en propreté hospitalière"/>
+                                                </noscript>
+                                            </div>
+                                        </div>
+                                        <h4 class="title-5"> Vidéo 1
+                                        </h4>
+                                        <p> Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes
+                                            etiam si lap…</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                {#</div>#}
+            </section>
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+.formations-bloc {
+	@include blocPadding;
+
+	@media print {
+		display: none;
+	}
+
+	.formations-list {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 60px;
+
+		.slick-slide {
+			margin: 0 15px;
+		}
+
+		.formation {
+			@media screen and (min-width: 1201px) {
+				width: calc((100% ) / 3);
+
+				&:not(:last-of-type) {
+					margin-right: 15px;
+				}
+			}
+
+			.tags {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

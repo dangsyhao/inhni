@@ -1,0 +1,84 @@
+.map-bloc {
+	position: relative;
+
+	.infoBox {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		z-index: 9;
+		background-color: #ffffff;
+		max-width: 100%;
+		box-shadow: 0 0 20px 0 #E8E9EC;
+		max-height: calc(100% - 40px);
+		overflow: hidden;
+
+		@media screen and (min-width: 641px) {
+			width: 460px;
+			right: auto;
+			bottom: auto;
+		}
+
+		.head {
+			box-shadow: 0 0 20px 0 #E8E9EC;
+			padding: 25px 30px;
+
+			.select2-container {
+				margin-top: 30px;
+			}
+		}
+
+		.content {
+			padding: 50px;
+			color: #1E3342;
+
+			&.content-detail {
+				padding: 15px 30px;
+
+				.address {
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 26px;
+				}
+			}
+
+			.title-13 {
+				color: $maincolor-5;
+				margin-bottom: 13px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 28px;
+			}
+		}
+
+		.item {
+			position: relative;
+			margin-bottom: 20px;
+
+			+ .item {
+				border-top: 1px solid #F2F4F8;
+				padding-top: 20px;
+			}
+
+			.title-14 {
+				color: $maincolor-5;
+			}
+
+			.btn {
+				width: 278px;
+				text-align: center;
+				margin: 15px auto 0;
+				display: block;
+			}
+
+			.direction {
+				position: absolute;
+				top: 20px;
+				right: 0;
+			}
+		}
+	}
+}

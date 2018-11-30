@@ -9,11 +9,11 @@
               </a>
               <span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                             <a href="http://my-website-url.com/whatever-archive-category-page/" itemprop="url">
-                                <span itemprop="title">Formations</span>
+                                <span itemprop="title">Offres en alternances</span>
               </a>
               <span itemprop="child" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                                 <a href="http://my-website-url.com/whatever-archive-category-page/subpage" itemprop="url">
-                                    <span itemprop="title">Formations continue</span>
+                                    <span itemprop="title">Poste d’agent machiniste</span>
               </a>
               </span>
               </span>
@@ -22,240 +22,156 @@
             </div>
         </div>
     </div>
-    <div class="search-bloc">
+    <div class="maincontent-bloc">
         <div class="content">
             <div class="wrapper">
-                <form method="POST" action="#">
-                    <input type="text" placeholder="Recherche exemple">
-                    <button type="submit"></button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="filter-result-bloc">
-        <div class="content">
-            <div class="wrapper">
-                <div class="formation-result formation-result-2">
-                    <div class="list-result">
-                        <article class="item">
-                            <div class="image">
-                                <a class="lazy_responsive_image initialized lazy_loaded" href="#" title="" style="background-image: url(&quot;assets/images/formation3.png&quot;);" data-lazy-src-481="assets/images/formation3.png" data-lazyload-init-url="assets/images/formation3.png">
-                                    <noscript>
-                                        <img src="assets/images/formation3.jpg" alt="" />
-                                    </noscript>
+                <div class="wrap">
+                    <div class="main">
+                        <h1 class="title-9">Agent machiniste</h1>
+                        <ul class="present-list-detail">
+                            <li>
+                                <i class="i-contrat i-circle"></i>
+                                <p class="des">Bac +3</p>
+                            </li>
+                            <li>
+                                <i class="i-calendar i-circle"></i>
+                                <p class="des">À partir de Novembre 2018</p>
+                            </li>
+                            <li>
+                                <i class="i-pin i-circle"></i>
+                                <p class="des">Villejuif</p>
+                            </li>
+                            <li>
+                                <i class="i-euro i-circle"></i>
+                                <p class="des"><span>De</span> 800€ <span>HT à</span> 1100€</p>
+                            </li>
+                            <li>
+                                <i class="i-diplome i-circle"></i>
+                                <p class="des">Certificat type*</p>
+                            </li>
+                            <li>
+                                <i class="i-people i-circle"></i>
+                                <p class="des">2 Postes à pourvoir</p>
+                            </li>
+                        </ul>
+                        <div class="editor-bloc">
+                            <h3>Description du poste</h3>
+                            <p>Stage de 3 jours en présentiel dans l’un de nos centre de formation partout en France</p>
+                            <h3>Domaine de l’entreprise</h3>
+                            <p>Connaitre les règles de conduite et de sécurité relatives aux PEMP (Recommandation R386 de la CNAMTS)</p>
+                            <p>Être capable d’accéder à des emplacements et évoluer en hauteur en sécurité en utilisant une PEMP de type 1B et 3B</p>
+                            <h3>Missions</h3>
+                            <p>Apports théoriques et manipulations sur les deux types de plateforme élévatrice mobile de personne.Au cours de la formation, une documentation sera remise à chaque stagiaire</p>
+                            <h3>Profil recherché</h3>
+                            <p>Les obligations du constructeur, de l’utilisateur, des employeurs et les responsabilités des conducteurs (civile / pénale) Le principe de fonctionnement et les différents organes Les différents EPI (Équipements de Protection Individuelle)</p>
+                        </div>
+                        <div class="wrap-btn">
+                            <a class="btn" href="#" title="Contacter le centre de formation">
+                                <span class="txt">Contacter le centre de formation</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <ul class="extend-block">
+                            <li>
+                                <a href="#">
+                                    <i class="i-share i-circle"></i><span>Partager</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="i-send i-circle"></i><span>Envoyer</span></a>
+                            </li>
+                            <li>
+                                <a href="assets/images/formation1.png" download="">
+                                    <i class="i-download i-circle"></i><span>Telécharger</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" onclick="window.print()">
+                                    <i class="i-print i-circle"></i><span>Imprimer</span></a>
+                            </li>
+                        </ul>
+                        <div class="information-useful">
+                            <div class="content">
+                                <h3 class="title-7 title-center">Formation associée</h3>
+                                <img src="assets/images/formation1.png" alt="" class="w-100">
+                                <h3 class="title-7">Titre de la formation</h3>
+                                <h4 class="title-10">Durée</h4>
+                                <p>1 an</p>
+                                <h4 class="title-10">CONDITIONS D’INSCRITPTION</h4>
+                                <ul>
+                                    <li>Bac plus 3 ou +</li>
+                                </ul>
+                                <a class="btn" href="#" title="Voir la fiche formation">
+                                    <span class="txt">Voir la fiche formation</span>
                                 </a>
                             </div>
-                            <div class="content">
-                                <h4 class="title-12">
-                                    <a href="#" title="Consulter l'article">
-                                        Cycle droit du travail - Nouveaux entrants dans le secteur
-                                    </a>
-                                </h4>
-                                <p class="promotion">Code formation<span>- CY417</span></p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dapibus libero. Maecenas aliquam ante dapibus purus pulvinar, eget egestas tortor varius. Quisque luctus dui id ex porttitor vehicula. Cras varius ipsum nec […]
-                                </p>
-                                <ul class="present-result">
-                                    <li>
-                                        <p><span class="des">Durée : </span>1 jour</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="des">Public visé : </span>Lorem ipsum sit amet</p>
-                                    </li>
-                                </ul>
-                                <div class="wrap-btn">
-                      <span class="link-arrow link-arrow-blue link-arrow-align-right fix">
-                        <a class="link" href="#" title="Continuer la lecture">Voir la fiche</a>
-                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="item">
-                            <div class="image">
-                                <a class="lazy_responsive_image initialized lazy_loaded" href="#" title="" style="background-image: url(&quot;assets/images/formation3.png&quot;);" data-lazy-src-481="assets/images/formation3.png" data-lazyload-init-url="assets/images/formation3.png">
-                                    <noscript>
-                                        <img src="assets/images/formation3.jpg" alt="" />
-                                    </noscript>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h4 class="title-12">
-                                    <a href="#" title="Consulter l'article">
-                                        Cycle droit du travail - Nouveaux entrants dans le secteur
-                                    </a>
-                                </h4>
-                                <p class="promotion">Code formation<span>- CY417</span></p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dapibus libero. Maecenas aliquam ante dapibus purus pulvinar, eget egestas tortor varius. Quisque luctus dui id ex porttitor vehicula. Cras varius ipsum nec […]
-                                </p>
-                                <ul class="present-result">
-                                    <li>
-                                        <p><span class="des">Durée : </span>1 jour</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="des">Public visé : </span>Lorem ipsum sit amet</p>
-                                    </li>
-                                </ul>
-                                <div class="wrap-btn">
-                      <span class="link-arrow link-arrow-blue link-arrow-align-right fix">
-                        <a class="link" href="#" title="Continuer la lecture">Voir la fiche</a>
-                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="item">
-                            <div class="image">
-                                <a class="lazy_responsive_image initialized lazy_loaded" href="#" title="" style="background-image: url(&quot;assets/images/formation3.png&quot;);" data-lazy-src-481="assets/images/formation3.png" data-lazyload-init-url="assets/images/formation3.png">
-                                    <noscript>
-                                        <img src="assets/images/formation3.jpg" alt="" />
-                                    </noscript>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h4 class="title-12">
-                                    <a href="#" title="Consulter l'article">
-                                        Cycle droit du travail - Nouveaux entrants dans le secteur
-                                    </a>
-                                </h4>
-                                <p class="promotion">Code formation<span>- CY417</span></p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dapibus libero. Maecenas aliquam ante dapibus purus pulvinar, eget egestas tortor varius. Quisque luctus dui id ex porttitor vehicula. Cras varius ipsum nec […]
-                                </p>
-                                <ul class="present-result">
-                                    <li>
-                                        <p><span class="des">Durée : </span>1 jour</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="des">Public visé : </span>Lorem ipsum sit amet</p>
-                                    </li>
-                                </ul>
-                                <div class="wrap-btn">
-                      <span class="link-arrow link-arrow-blue link-arrow-align-right fix">
-                        <a class="link" href="#" title="Continuer la lecture">Voir la fiche</a>
-                    </span>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="item">
-                            <div class="image">
-                                <a class="lazy_responsive_image initialized lazy_loaded" href="#" title="" style="background-image: url(&quot;assets/images/formation3.png&quot;);" data-lazy-src-481="assets/images/formation3.png" data-lazyload-init-url="assets/images/formation3.png">
-                                    <noscript>
-                                        <img src="assets/images/formation3.jpg" alt="" />
-                                    </noscript>
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h4 class="title-12">
-                                    <a href="#" title="Consulter l'article">
-                                        Cycle droit du travail - Nouveaux entrants dans le secteur
-                                    </a>
-                                </h4>
-                                <p class="promotion">Code formation<span>- CY417</span></p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dapibus libero. Maecenas aliquam ante dapibus purus pulvinar, eget egestas tortor varius. Quisque luctus dui id ex porttitor vehicula. Cras varius ipsum nec […]
-                                </p>
-                                <ul class="present-result">
-                                    <li>
-                                        <p><span class="des">Durée : </span>1 jour</p>
-                                    </li>
-                                    <li>
-                                        <p><span class="des">Public visé : </span>Lorem ipsum sit amet</p>
-                                    </li>
-                                </ul>
-                                <div class="wrap-btn">
-                      <span class="link-arrow link-arrow-blue link-arrow-align-right fix">
-                        <a class="link" href="#" title="Continuer la lecture">Voir la fiche</a>
-                    </span>
-                                </div>
-                            </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <section class="jobs-zoom-bloc">
+    <section class="jobs-offers-bloc">
         <div class="wrapper">
             <h3 class="title-1 blue-polygon">
-                <span>Zooms métiers</span>
+                <span>Offres similaires</span>
             </h3>
-            <div class="zooms">
-                <a data-fancybox="" data-type="iframe" class="zoom" href="https://www.dailymotion.com/embed/video/x6v2hof?autoplay=1" title="En savoir plus sur le métier">
-                    <div class="image video">
-                        <div class="lazy_image initialized" style="background-image: url('assets/images/placeholder.gif');" data-lazy-src="assets/images/zoom.jpg" data-lazyload-init-url="assets/images/zoom.jpg">
-                            <noscript>
-                                <img src="assets/images/zoom.jpg" alt="Agent qualifié en propreté hospitalière" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <h4 class="title-5">Agent qualifié en propreté hospitalière</h4>
+            <div class="jobs">
+                <a class="job" href="#" title="Consulter l'offre d'emploi">
+                    <h4 class="title-4">Agent de petite maintenance H/F</h4>
+                    <ul class="details">
+                        <li class="school">Bac pro</li>
+                        <li class="location">Strasbourg</li>
+                        <li class="money">720 € par mois</li>
+                    </ul>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus elit vitae nisl scelerisque, nec eui…</p>
+                        Permis B indispensable, vous aimez le travail en équipe et êtes attaché(e)…</p>
+                    <span class="link-arrow link-arrow-align-right link-arrow-white">
+        <span class="link">Voir l'annonce</span>
+              </span>
                 </a>
-                <a data-fancybox="" class="zoom" href="https://www.youtube.com/embed/nFUTFgMGyoU" title="En savoir plus sur le métier">
-                    <div class="image video">
-                        <div class="lazy_image initialized" style="background-image: url('assets/images/placeholder.gif');" data-lazy-src="assets/images/zoom.jpg" data-lazyload-init-url="assets/images/zoom.jpg">
-                            <noscript>
-                                <img src="assets/images/zoom.jpg" alt="Agent qualifié en propreté hospitalière" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <h4 class="title-5">Agent qualifié en propreté hospitalière</h4>
+                <a class="job" href="#" title="Consulter l'offre d'emploi">
+                    <h4 class="title-4">Agent de petite maintenance H/F</h4>
+                    <ul class="details">
+                        <li class="school">Bac pro</li>
+                        <li class="location">Strasbourg</li>
+                        <li class="money">720 € par mois</li>
+                    </ul>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus elit vitae nisl scelerisque, nec eui…</p>
+                        Permis B indispensable, vous aimez le travail en équipe et êtes attaché(e)…</p>
+                    <span class="link-arrow link-arrow-align-right link-arrow-white">
+        <span class="link">Voir l'annonce</span>
+              </span>
                 </a>
-                <a data-fancybox="" class="zoom" href="https://player.vimeo.com/video/122011634" title="En savoir plus sur le métier">
-                    <div class="image video">
-                        <div class="lazy_image initialized" style="background-image: url('assets/images/placeholder.gif');" data-lazy-src="assets/images/zoom.jpg" data-lazyload-init-url="assets/images/zoom.jpg">
-                            <noscript>
-                                <img src="assets/images/zoom.jpg" alt="Agent qualifié en propreté hospitalière" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <h4 class="title-5">Agent qualifié en propreté hospitalière</h4>
+                <a class="job" href="#" title="Consulter l'offre d'emploi">
+                    <h4 class="title-4">Agent de petite maintenance H/F</h4>
+                    <ul class="details">
+                        <li class="school">Bac pro</li>
+                        <li class="location">Strasbourg</li>
+                        <li class="money">720 € par mois</li>
+                    </ul>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus elit vitae nisl scelerisque, nec eui…</p>
+                        Permis B indispensable, vous aimez le travail en équipe et êtes attaché(e)…</p>
+                    <span class="link-arrow link-arrow-align-right link-arrow-white">
+        <span class="link">Voir l'annonce</span>
+              </span>
                 </a>
-                <a data-fancybox="" class="zoom" href="https://player.vimeo.com/video/122011634" title="En savoir plus sur le métier">
-                    <div class="image video">
-                        <div class="lazy_image initialized" style="background-image: url('assets/images/placeholder.gif');" data-lazy-src="assets/images/zoom.jpg" data-lazyload-init-url="assets/images/zoom.jpg">
-                            <noscript>
-                                <img src="assets/images/zoom.jpg" alt="Agent qualifié en propreté hospitalière" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <h4 class="title-5">Agent qualifié en propreté hospitalière</h4>
+                <a class="job" href="#" title="Consulter l'offre d'emploi">
+                    <h4 class="title-4">Agent de petite maintenance H/F</h4>
+                    <ul class="details">
+                        <li class="school">Bac pro</li>
+                        <li class="location">Strasbourg</li>
+                        <li class="money">720 € par mois</li>
+                    </ul>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus elit vitae nisl scelerisque, nec eui…</p>
-                </a>
-                <a data-fancybox="" class="zoom" href="https://player.vimeo.com/video/122011634" title="En savoir plus sur le métier">
-                    <div class="image video">
-                        <div class="lazy_image initialized" style="background-image: url('assets/images/placeholder.gif');" data-lazy-src="assets/images/zoom.jpg" data-lazyload-init-url="assets/images/zoom.jpg">
-                            <noscript>
-                                <img src="assets/images/zoom.jpg" alt="Agent qualifié en propreté hospitalière" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <h4 class="title-5">Agent qualifié en propreté hospitalière</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus elit vitae nisl scelerisque, nec eui…</p>
-                </a>
-                <a data-fancybox="" class="zoom" href="https://player.vimeo.com/video/122011634" title="En savoir plus sur le métier">
-                    <div class="image video">
-                        <div class="lazy_image initialized" style="background-image: url('assets/images/placeholder.gif');" data-lazy-src="assets/images/zoom.jpg" data-lazyload-init-url="assets/images/zoom.jpg">
-                            <noscript>
-                                <img src="assets/images/zoom.jpg" alt="Agent qualifié en propreté hospitalière" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <h4 class="title-5">Agent qualifié en propreté hospitalière</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus elit vitae nisl scelerisque, nec eui…</p>
+                        Permis B indispensable, vous aimez le travail en équipe et êtes attaché(e)…</p>
+                    <span class="link-arrow link-arrow-align-right link-arrow-white">
+        <span class="link">Voir l'annonce</span>
+              </span>
                 </a>
             </div>
-            <a class="btn" href="#" title="Voir tous les métiers">
-                <span class="txt">Tous les métiers</span>
+            <a class="btn" href="#" title="Voir toutes les offres">
+                <span class="txt">Voir toutes les offres</span>
             </a>
         </div>
     </section>

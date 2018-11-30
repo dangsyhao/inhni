@@ -1,13 +1,13 @@
 
 
-<?php if(have_rows(INHNI_JOBS_ZOOM)):?>
+<?php if(have_rows(INHNI_JOBS_ZOOM,get_option('page_on_front'))):?>
     <section class="jobs-zoom-bloc">
         <div class="wrapper">
             <h3 class="title-1 blue-polygon">
                 <span><?php _e('Zooms métiers',DOMAIN);?></span>
             </h3>
             <div class="zooms">
-                <?php while(have_rows(INHNI_JOBS_ZOOM)):the_row();?>
+                <?php while(have_rows(INHNI_JOBS_ZOOM,get_option('page_on_front'))):the_row();?>
                 <?php
                 $job_zoom_items=get_sub_field('job_zoom_items');
                 $list_all_button=get_sub_field('list_all_button');

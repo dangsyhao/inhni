@@ -38,8 +38,13 @@ function athena_setup(){
 
     // Add Theme Support
     add_post_type_support( 'page', 'excerpt' );
+    add_post_type_support( 'post', 'excerpt' );
 
-
+    function add_query_vars_filter( $vars ) {
+        $vars[] = "my_var";
+        return $vars;
+    }
+    add_filter( 'query_vars', 'add_query_vars_filter' );
 
 
 
@@ -49,5 +54,5 @@ function athena_setup(){
  * Add Theme Support -Post Formats
  **/
 
-add_theme_support( 'post-formats', array( 'aside', 'gallery','link','image' ) );
+add_theme_support( 'post-formats', array( 'alt_offers','aside', 'gallery','link','image' ) );
 

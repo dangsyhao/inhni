@@ -1,5 +1,8 @@
 
 <?php $news_items=get_sub_field('news_items');?>
+
+<?php if(isset($news_items)):?>
+    <?php setup_postdata($news_items);?>
     <article class="article big">
         <div class="image">
             <a class="lazy_responsive_image"
@@ -17,16 +20,19 @@
             <ul class="tags">
                 <li>
                     <span><?php _e("Actualités",DOMAIN); ?></span>
-                </li>
+                </li>s
             </ul>
             <h4 class="title-3">
-                <a href="#" title="<?php _e('Consulter l\'article',DOMAIN);?>">
+                <a href="<?= get_the_permalink($news_items->ID) ?>" title="<?php _e('Consulter l\'article',DOMAIN);?>">
                     <?= $news_items->post_title ?>
                 </a>
             </h4>
             <p> <?= get_the_excerpt($news_items->ID) ?></p>
             <span class="link-arrow link-arrow-blue">
-                <a class="link" href="<?= get_the_permalink($news_items->ID) ?>" title="<?php _e('Continuer la lecture',DOMAIN);?>"><?php _e('Lire la suite',DOMAIN);?></a>
-            </span>
+                    <a class="link" href="<?= get_the_permalink($news_items->ID) ?>" title="<?php _e('Continuer la lecture',DOMAIN);?>"><?php _e('Lire la suite',DOMAIN);?></a>
+                </span>
         </div>
     </article>
+
+<?php wp_reset_postdata();
+endif;?>

@@ -1,5 +1,7 @@
 
 <?php foreach ($posts as $post_items):?>
+    <?php setup_postdata ($post_items);?>
+
     <article class="item">
         <div class="image">
             <a class="lazy_responsive_image initialized lazy_loaded" href="#" title="" style="background-image:
@@ -19,7 +21,7 @@
             </h4>
             <p class="promotion"><?php _e('Code formation',DOMAIN);?><span>- CY417</span></p>
             <p>
-                <?php the_excerpt() ;?>
+                <?= get_the_excerpt($post_items->ID) ;?>
             </p>
             <ul class="present-result">
                 <li>

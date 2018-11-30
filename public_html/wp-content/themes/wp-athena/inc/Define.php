@@ -91,6 +91,13 @@ define('PARTNERS_BLOC_TITLE_TAG','_partners_bloc_title_tag');
 define('PARTNERS_BLOC_IMAGE_URL','_partners_bloc_image_url');
 define('PARTNERS_BLOC_IMAGE_LAZY_URL','_partners_bloc_image_lazy_url');
 
+
+/**
+ * Alternating Offers Post
+ **/
+define('INHNI_ALTERNATING_OFFERS','inhni_alternating_offers');
+
+
 /**
  * Footer
  **/
